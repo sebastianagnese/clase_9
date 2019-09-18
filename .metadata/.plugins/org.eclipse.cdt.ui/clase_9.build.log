@@ -1,15 +1,25 @@
-18:50:31 **** Build of configuration Debug for project clase_9 ****
+20:06:58 **** Incremental Build of configuration Debug for project clase_9 ****
 make all 
 Building file: ../src/clase_9.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clase_9.d" -MT"src/clase_9.o" -o "src/clase_9.o" "../src/clase_9.c"
-Finished building: ../src/clase_9.c
- 
-Building target: clase_9
-Invoking: GCC C Linker
-gcc  -o "clase_9"  ./src/clase_9.o   
-Finished building target: clase_9
- 
+../src/clase_9.c: In function ‘main’:
+../src/clase_9.c:36:3: warning: implicit declaration of function ‘gets’ [-Wimplicit-function-declaration]
+   gets(vecAgenda[i].nombre);
+   ^~~~
+../src/clase_9.c: In function ‘funcMenu’:
+../src/clase_9.c:59:2: error: stray ‘\342’ in program
+  ​{
+  ^
+../src/clase_9.c:59:3: error: stray ‘\200’ in program
+  ​{
+   ^
+../src/clase_9.c:59:4: error: stray ‘\213’ in program
+  ​{
+    ^
+make: *** [src/clase_9.o] Error 1
+src/subdir.mk:18: fallo en las instrucciones para el objetivo 'src/clase_9.o'
+"make all" terminated with exit code 2. Build might be incomplete.
 
-18:50:31 Build Finished. 0 errors, 0 warnings. (took 374ms)
+20:06:58 Build Failed. 5 errors, 1 warnings. (took 357ms)
 

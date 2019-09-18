@@ -1,0 +1,28 @@
+/*
+ ============================================================================
+ Name        : clase_9.c
+ Author      : agn
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	typedef struct {
+		int dni[50];
+		int edad[50];
+		char nombre[50];
+		char apellido[50];
+
+
+	}datosPersonales;
+	return 0;
+}
+
+
+

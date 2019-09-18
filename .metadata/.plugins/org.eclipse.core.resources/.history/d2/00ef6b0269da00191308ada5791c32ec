@@ -57,7 +57,7 @@ int funcMenu(int *opcion)
 
 	switch (valor)
 	​{
-		case 1:
+		case '1':
 	    	// ENLISTAR
 	    	break;
 

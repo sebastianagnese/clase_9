@@ -52,8 +52,6 @@ int funcMenu(int *opcion)
 {
 	int valor;
 	valor = *opcion;
-	int retorno;
-	retorno = -1;
 
 	switch (valor)
 	​{
@@ -61,25 +59,25 @@ int funcMenu(int *opcion)
 	    	// ENLISTAR
 	    	break;
 
-	    case '2':
+	    case 2:
 			// ALTA
 	    	break;
 
-	    case '3':
+	    case 3:
 			// BAJA
 	    	break;
 
-	    case '4':
+	    case 4:
 			// MODI
 	    	break;
 
-	    case '5':
+	    case 5:
 			// ORDENAR
 	    	break;
 
 	    default:
 	    	// RETORNO ERROR
-	    	break;
+
 	}
 
 	return retorno;

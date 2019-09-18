@@ -9,7 +9,7 @@
  */
 
 #include <stdio.h>
-#include <stdio_ext.h>
+#include <studio_ext.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -21,8 +21,6 @@ typedef struct
 	int numero[50];
 
 	}datosPersonales;
-
-int funcMenu(int *opcion);
 
 int main(void) {
 
@@ -42,47 +40,8 @@ int main(void) {
 
 	//vecAgenda[0].nombre
 	//strcpy(vecAgenda[0].nombre,"nombreDeLaPersona");
-	// --- strcmp (sTRINGcOMPARE) - compara characters mayor/menor --- //
-	// ----- 1. ENLISTAR - 2.ALTA - 3.BAJA - 4. MODI - 5.ORDENAR ----- //
 
 	return 0;
-}
-
-int funcMenu(int *opcion)
-{
-	int valor;
-	valor = *opcion;
-	int retorno;
-	retorno = -1;
-
-	switch (valor)
-	​{
-		case 1:
-	    	// ENLISTAR
-	    	break;
-
-	    case '2':
-			// ALTA
-	    	break;
-
-	    case '3':
-			// BAJA
-	    	break;
-
-	    case '4':
-			// MODI
-	    	break;
-
-	    case '5':
-			// ORDENAR
-	    	break;
-
-	    default:
-	    	// RETORNO ERROR
-	    	break;
-	}
-
-	return retorno;
 }
 
 

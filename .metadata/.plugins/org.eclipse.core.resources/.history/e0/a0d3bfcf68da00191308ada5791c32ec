@@ -57,7 +57,7 @@ int funcMenu(int *opcion)
 
 	switch (valor)
 	​{
-		case 1:
+		case '1':
 	    	// ENLISTAR
 	    	break;
 
@@ -80,6 +80,7 @@ int funcMenu(int *opcion)
 	    default:
 	    	// RETORNO ERROR
 	    	break;
+
 	}
 
 	return retorno;
