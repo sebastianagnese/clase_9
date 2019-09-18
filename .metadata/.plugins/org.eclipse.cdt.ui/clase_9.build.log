@@ -1,0 +1,15 @@
+18:50:31 **** Build of configuration Debug for project clase_9 ****
+make all 
+Building file: ../src/clase_9.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clase_9.d" -MT"src/clase_9.o" -o "src/clase_9.o" "../src/clase_9.c"
+Finished building: ../src/clase_9.c
+ 
+Building target: clase_9
+Invoking: GCC C Linker
+gcc  -o "clase_9"  ./src/clase_9.o   
+Finished building target: clase_9
+ 
+
+18:50:31 Build Finished. 0 errors, 0 warnings. (took 374ms)
+
