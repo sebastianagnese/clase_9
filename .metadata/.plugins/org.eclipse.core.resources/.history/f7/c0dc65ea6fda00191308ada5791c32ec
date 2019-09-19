@@ -1,0 +1,100 @@
+/*
+ ============================================================================
+ Name        : clase_9.c
+ Author      : agn
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdio_ext.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct
+	{
+	char nombre[50];
+	char apellido[50];
+	char calle[50];
+	int numero[50];
+
+	}datosPersonales;
+
+int funcMenu(int *opcion);
+
+int main(void) {
+
+	datosPersonales vecAgenda[3];
+	// --- LATER ADD ", vecContactos[3], vecAmigos[3]" --- //
+	int i;
+
+	for(i=0;i<3;i++)
+	{
+		printf("\nIngrese nombre: ");
+		gets(vecAgenda[i].nombre);
+		printf("\nIngrese apellido: ");
+		gets(vecAgenda[i].apellido);
+
+	}
+
+
+	//vecAgenda[0].nombre
+	//strcpy(vecAgenda[0].nombre,"nombreDeLaPersona");
+	// --- strcmp (sTRINGcOMPARE) - compara characters mayor/menor --- //
+	// ----- 1. ENLISTAR - 2.ALTA - 3.BAJA - 4. MODI - 5.ORDENAR ----- //
+
+	return 0;
+}
+
+int funcMenu(int opcion)
+{
+	int valor;
+	valor = opcion;
+	int retorno;
+	retorno = -1;
+
+	printf("El valor ingresado fue: %d",valor);
+
+	printf("\n--- MENU ---\nLISTA DE OPCIONES");
+	printf("\n1: Enlistar\n2: Alta\n3: Baja");
+	printf("\n4: Modificar\n5: Ordenar\n");
+	printf("\nIngrese una opcion: ");
+
+	if(valor == 1)
+	{
+		// LISTA
+		retorno = 0;
+	}
+
+	if(valor == 2)
+	{
+		// ALTA
+		retorno = 0;
+	}
+
+	if(valor == 3)
+	{
+		// BAJA
+		retorno = 0;
+	}
+
+	if(valor == 4)
+	{
+		// MODI
+		retorno = 0;
+	}
+
+	if(valor == 5)
+	{
+		// ORDER
+		retorno = 0;
+	}
+
+
+	return retorno;
+}
+
+
+

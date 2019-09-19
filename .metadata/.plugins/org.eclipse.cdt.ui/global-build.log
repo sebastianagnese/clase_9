@@ -1,22 +1,31 @@
-20:06:58 **** Incremental Build of configuration Debug for project clase_9 ****
+21:26:09 **** Incremental Build of configuration Debug for project clase_9 ****
 make all 
 Building file: ../src/clase_9.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/clase_9.d" -MT"src/clase_9.o" -o "src/clase_9.o" "../src/clase_9.c"
-../src/clase_9.c: In function ‘main’:
-../src/clase_9.c:36:3: warning: implicit declaration of function ‘gets’ [-Wimplicit-function-declaration]
+../src/clase_9.c: In function ‘funcMenu’:
+../src/clase_9.c:52:8: warning: passing argument 1 of ‘scanf’ from incompatible pointer type [-Wincompatible-pointer-types]
+  scanf(&valor);
+        ^
+In file included from /usr/include/features.h:364:0,
+                 from /usr/include/stdio.h:27,
+                 from ../src/clase_9.c:11:
+/usr/include/stdio.h:448:12: note: expected ‘const char * restrict’ but argument is of type ‘int *’
+ extern int __REDIRECT (scanf, (const char *__restrict __format, ...),
+            ^
+../src/clase_9.c: In function ‘ingresoEstructuras’:
+../src/clase_9.c:100:3: warning: implicit declaration of function ‘gets’ [-Wimplicit-function-declaration]
    gets(vecAgenda[i].nombre);
    ^~~~
-../src/clase_9.c: In function ‘funcMenu’:
-../src/clase_9.c:59:2: error: stray ‘\342’ in program
-  ​{
-  ^
-../src/clase_9.c:59:3: error: stray ‘\200’ in program
-  ​{
-   ^
-../src/clase_9.c:59:4: error: stray ‘\213’ in program
-  ​{
-    ^
-make: *** [src/clase_9.o] Error 1
-src/subdir.mk:18: fallo en las instrucciones para el objetivo 'src/clase_9.o'
-"make all" terminated with exit code 2. Build might be incomplete.
+../src/clase_9.c:117:25: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Wformat=]
+      printf("\nTESTNUME%d", vecAgenda[i].numero);
+                         ^
+Finished building: ../src/clase_9.c
+ 
+Building target: clase_9
+Invoking: GCC C Linker
+gcc  -o "clase_9"  ./src/clase_9.o   
+./src/clase_9.o: En la función `ingresoEstructuras':
+/home/alumno/agn/clase_9/Debug/../src/clase_9.c:100: aviso: the `gets' function is dangerous and should not be used.
+Finished building target: clase_9
+ 
